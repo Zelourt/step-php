@@ -8,7 +8,7 @@ require_once 'controllers.php';
 if (isset($_SESSION["user"])){
     require 'templates/auth.php';
 } else {
-
+    echo "<h1> Hello " . $_SESSION["user"]. "</h1>";
 
     $uri = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
     if ("/index.php" === $uri || "/" === $uri) {
