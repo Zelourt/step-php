@@ -3,12 +3,10 @@ session_start();
 require_once 'model.php';
 require_once 'controllers.php';
 
-
-
-if (!isset($_SESSION['login'])){
+if ( $_SESSION['login'] == null ){
     require 'templates/auth.php';
 } else {
-    echo "<h1> Hello " . $_SESSION["user"]. "</h1>";
+    echo "<h1> Hello " . $_SESSION["login"]. "</h1>";
 
     $uri = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
     if ("/index.php" === $uri || "/" === $uri) {

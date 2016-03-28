@@ -1,5 +1,4 @@
 <?php
-session_start();
 
 function list_action(){
     $posts = get_all_posts();
@@ -13,4 +12,8 @@ function show_action($id) {
 
 function show_auth(){
     require 'templates/auth.php';
+}
+
+function add_post($name, $data){
+    add_post($name, $data);
 }

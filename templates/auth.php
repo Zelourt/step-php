@@ -1,7 +1,7 @@
 <?php $title="auth" ?>
 <?php ob_start() ?>
 
-<form method="post" action="../api_auth.php">
+<form method="GET" action="api_func.php">
     <input type="text" name="login" placeholder="Your login"/>
     <input type="password" name="password" placeholder="Your password"/>
     <button type="submit" name="logIn">Log in</button>
