@@ -1,4 +1,5 @@
 <?php
+session_abort();
 /**
  * Created by PhpStorm.
  * User: zelourt
@@ -8,5 +9,7 @@
 
 
 if (isset($_POST['submit']) AND $_POST['submit'] == "logIn"){
-    echo $_POST['login'];
+    $_SESSION["user"] = $_POST['login'];
+} elseif (isset($_POST['submit']) AND $_POST['submit'] == "signIn"){
+    $_SESSION["user"] = $_POST['login'];
 }
