@@ -28,7 +28,7 @@ function get_post_by_id($id){
     return $row;
 }
 
-function add_post($name, $data){
+function add_post_inDB($name, $data){
     $link = open_database_connection();
     $result = $link->query("INSERT INTO users (title, text) VALUES ($name, $data);");
     $row = $result->fetch(PDO::FETCH_ASSOC);

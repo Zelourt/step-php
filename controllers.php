@@ -15,5 +15,5 @@ function show_auth(){
 }
 
 function add_post($name, $data){
-    add_post($name, $data);
+    add_post_inDB($name, $data);
 }
