@@ -3,7 +3,7 @@ session_start();
 
 
 if (isset($_SESSION["user"])){
-
+    require 'templates/auth.php';
 }
 
 

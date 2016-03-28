@@ -12,5 +12,5 @@ function show_action($id) {
 }
 
 function show_auth(){
-    require 'templates/login.php';
+    require 'templates/auth.php';
 }
