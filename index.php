@@ -5,7 +5,7 @@ require_once 'controllers.php';
 
 
 
-if (!isset($_SESSION["user"])){
+if (isset($_SESSION["user"])){
     require 'templates/auth.php';
 } else {
 
