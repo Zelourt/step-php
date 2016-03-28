@@ -8,8 +8,8 @@ session_abort();
  */
 
 
-if (isset($_POST['submit']) AND $_POST['submit'] == "logIn"){
-    $_SESSION["user"] = $_POST['login'];
+if (isset($_POST['submit']) AND $_POST['submit'] == 'logIn'){
+    $_SESSION['login'] = $_POST['login'];
 } elseif (isset($_POST['submit']) AND $_POST['submit'] == "signIn"){
-    $_SESSION["user"] = $_POST['login'];
+    $_SESSION['login'] = $_POST['login'];
 }
