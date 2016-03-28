@@ -1,4 +1,5 @@
 <?php
+session_start();
 
 function open_database_connection(){
     $link = new PDO("mysql:host=eu-cdbr-azure-west-d.cloudapp.net;dbname=step-mysql-db", "bfa66b3b5d02fb", "a3bb67b4");

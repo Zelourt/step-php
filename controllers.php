@@ -1,4 +1,5 @@
 <?php
+session_start();
 
 function list_action(){
     $posts = get_all_posts();
@@ -8,4 +9,8 @@ function list_action(){
 function show_action($id) {
     $post = get_post_by_id($id);
     require "templates/show.php";
+}
+
+function show_auth(){
+    require 'templates/login.php';
 }

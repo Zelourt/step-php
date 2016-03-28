@@ -1,4 +1,16 @@
 <?php
+session_start();
+
+
+if (isset($_SESSION["user"])){
+
+}
+
+
+if (isset($_POST['submit']) AND $_POST['submit'] == "logIn"){
+    echo $_POST['login'];
+}
+
 require_once 'model.php';
 require_once 'controllers.php';
 
